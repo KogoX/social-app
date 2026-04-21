@@ -113,5 +113,89 @@ body {
 
 /* Editorial shadow */
 .editorial-shadow {
-  box-shadow: 0px 12px 32px rgba(25, 28, 30, 0.04);
+  box-shadow: 0px 12px 32px rgba(25, 28, 30, 0.08);
+}
+
+/* Enhanced shadows */
+.shadow-premium {
+  box-shadow: 0px 20px 48px rgba(25, 28, 30, 0.12);
+}
+
+.shadow-light {
+  box-shadow: 0px 4px 12px rgba(25, 28, 30, 0.06);
+}
+
+/* Smooth transitions */
+.transition-smooth {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Button animations */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-slideUp {
+  animation: slideUp 0.6s ease-out;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-in;
+}
+
+/* Gradient buttons */
+.btn-primary-gradient {
+  background: linear-gradient(135deg, #0058bc 0%, #0070eb 50%, #0058bc 100%);
+  background-size: 200% 200%;
+  transition: all 0.3s ease;
+}
+
+.btn-primary-gradient:hover {
+  background-position: 100% 0;
+  transform: translateY(-2px);
+  box-shadow: 0px 12px 28px rgba(0, 88, 188, 0.25);
+}
+
+.btn-primary-gradient:active {
+  transform: scale(0.98) translateY(0);
+}
+
+/* Input focus enhancement */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+
+/* Form group spacing */
+.form-group {
+  animation: slideUp 0.6s ease-out;
+}
+
+.form-group:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.form-group:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.form-group:nth-child(4) {
+  animation-delay: 0.3s;
 }
